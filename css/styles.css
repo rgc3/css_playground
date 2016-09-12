@@ -1,12 +1,24 @@
 body {
-  background-color: #ddd;
+  background-color: #8da6bf;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 4px 4px 6px #000;
+  font-size: 75px;
+  margin: auto;
 }
 
 header {
   padding: 10px;
-  background-color: #aaa;
   text-align: center;
-  border-bottom: 4px solid #666;
+  border-bottom: 5px solid #666;
+  height: 120px;
+  background: #b8dcff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #b8dcff, #003263); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #b8dcff, #003263); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #b8dcff, #003263); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #b8dcff, #003263); /* Standard syntax (must be last) */
 }
 
 /* CSS ANIMATION */
@@ -25,10 +37,10 @@ header {
 
 @keyframes fadingColors {
   0% {
-    background: red;
+    background: #b8dcff;
   }
   100% {
-    background: black;
+    background: #003263;
   }
 }
 
@@ -85,8 +97,12 @@ header {
   font-size: 50px;
   padding: 2% 0;
   -webkit-animation-timing-function: ease-in-out;
+  color: #003263;
 }
 
 @-webkit-keyframes mymove {
     from {left: 5%;}
     to {left: 60%;}
+
+
+/* CSS  Buttons */
