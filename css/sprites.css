@@ -2,6 +2,7 @@
 /* CSS  Walking Sprite */
 
 #walking {
+  margin-left: 50%;
   background-image: url("../img/adam.png");
   width: 120px;
   height: 180px;
@@ -22,11 +23,12 @@
 /* CSS  Dancing Sprite */
 
 #dancing {
+  margin-left: 10%;
   background-image: url("../img/dance-spritesheet-800px.png");
   width: 266.6666666px;
   height: 322px;
-  -webkit-animation: dance 1s steps(3) infinite;
-  animation: dance 1s steps(3) infinite;
+  -webkit-animation: dance 1.25s steps(3) infinite;
+  animation: dance 1.25s steps(3) infinite;
 }
 
 @-webkit-keyframes dance {
@@ -37,4 +39,46 @@
 @keyframes dance {
   from { background-position: 0px; }
   to { background-position: -800px; }
+}
+
+/* CSS  Cap Guy Walking Sprite */
+
+#cap_guy {
+  margin-left: 35%;
+  background-image: url("../img/capguy-walk.png");
+  width: 75px;
+  height: 132px;
+  -webkit-animation: hat_walk 1s steps(8) infinite;
+  animation: hat-walk 1s steps(8) infinite;
+}
+
+@-webkit-keyframes hat-walk {
+  from { background-position: 0px; }
+  to { background-position: -600px; }
+}
+
+@keyframes hat-walk {
+  from { background-position: 0px; }
+  to { background-position: -600px; }
+}
+
+/* CSS  Hair Guy Running Sprite */
+
+#hair_guy {
+  margin-left: 80%;
+  background-image: url("../img/guy_walk_spritesheet.png");
+  width: 58px;
+  height: 87px;
+  -webkit-animation: running-man .5s steps(8) infinite;
+  animation: running-man .5s steps(8) infinite;
+}
+
+@-webkit-keyframes running-man {
+  from { background-position: 0px; }
+  to { background-position: -464px; }
+}
+
+@keyframes running-man {
+  from { background-position: 0px; }
+  to { background-position: -464px; }
 }
