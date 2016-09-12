@@ -1,0 +1,80 @@
+body {
+  background-color: #ddd;
+}
+
+header {
+  padding: 10px;
+  background-color: #aaa;
+  text-align: center;
+  border-bottom: 4px solid #666;
+}
+
+/* CSS ANIMATION */
+
+.element {
+  height: 60px;
+  animation-name: fadingColors;
+  animation-duration: 2s; /* animation will not run without duration */
+  animation-iteration-count: infinite; /* number of times animation should play */
+  animation-direction: alternate; /* animation plays forward then backward */
+  animation-delay: 1s; /* animation starts after 3 seconds have passed */
+  /*animation-fill-mode: none;*/
+  /*animation-play-state: running;*/
+  /*animation-timing-function: ease-out;*/
+}
+
+@keyframes fadingColors {
+  0% {
+    background: red;
+  }
+  100% {
+    background: black;
+  }
+}
+
+.fade {
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  text-shadow: 2px 2px 4px #000;
+  margin: auto;
+}
+
+/* CSS TRANSFORM */
+
+
+.transform {
+
+  perspective: 500px;
+  perspective-origin: center;
+  margin: auto;
+  background-image: url("../img/night-trees-milky-way-stars.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.perspective {
+  text-align: center;
+  width: 50%;
+  padding: 5%;
+  color: yellow;
+  font-size: 20px;
+  transition: 10s ease-out;
+  transform: rotateX(60deg) translateY(400px);
+}
+
+.perspective:hover {
+  transform: rotateX(60deg) translateY(0px);
+}
+
+
+
+
+
+
+
+
+
+/* CSS  */
