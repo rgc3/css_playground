@@ -52,7 +52,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 500px;
+  height: 800px;
 }
 
 .perspective {
@@ -70,11 +70,23 @@ header {
 }
 
 
+/* CSS  Text Slide */
 
+.slide {
+  height: 70px;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 5s infinite;
+}
 
+.sl {
+  margin: auto;
+  font-size: 50px;
+  padding: 2% 0;
+  -webkit-animation-timing-function: ease-in-out;
+}
 
-
-
-
-
-/* CSS  */
+@-webkit-keyframes mymove {
+    from {left: 5%;}
+    to {left: 60%;}
