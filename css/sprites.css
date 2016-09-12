@@ -1,0 +1,40 @@
+
+/* CSS  Walking Sprite */
+
+#walking {
+  background-image: url("../img/adam.png");
+  width: 120px;
+  height: 180px;
+  -webkit-animation: walk-east 1s steps(8) infinite;
+  animation: walk-east 1s steps(8) infinite;
+}
+
+@-webkit-keyframes walk-east {
+  from { background-position: 0px; }
+  to { background-position: -960px; }
+}
+
+@keyframes walk-east {
+  from { background-position: 0px; }
+  to { background-position: -960px; }
+}
+
+/* CSS  Dancing Sprite */
+
+#dancing {
+  background-image: url("../img/dance-spritesheet-800px.png");
+  width: 266.6666666px;
+  height: 322px;
+  -webkit-animation: dance 1s steps(3) infinite;
+  animation: dance 1s steps(3) infinite;
+}
+
+@-webkit-keyframes dance {
+  from { background-position: 0px; }
+  to { background-position: -800px; }
+}
+
+@keyframes dance {
+  from { background-position: 0px; }
+  to { background-position: -800px; }
+}
